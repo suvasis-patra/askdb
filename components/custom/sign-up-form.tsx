@@ -57,8 +57,7 @@ export function SignupForm() {
               context.error.message || "Something went wrong. Try again!"
             );
           },
-          onSuccess: (context) => {
-            //redirect to the dashboard or sign in page
+          onSuccess: (_context) => {
             setInfoMessage("Verify your email to continue...");
             setIsEmailVerificationRequired(true);
           },
@@ -66,6 +65,7 @@ export function SignupForm() {
       );
     } catch (error) {
       setAuthError("Something went wrong!");
+      console.log(error);
     }
   }
 
@@ -82,8 +82,8 @@ export function SignupForm() {
               AskDB Signup
             </h1>
             <p className="text-gray-600 mt-4">
-              Create your account to start asking questions about your company’s
-              database — powered by AI.
+              Create your account to start asking questions about your
+              company&apos;s database — powered by AI.
             </p>
           </div>
           {isEmailVerificationRequired ? (

@@ -8,6 +8,7 @@ const PagesLayout = ({
   return (
     <div className="w-full">
       <Navbar />
+      <div>{children}</div>
     </div>
   );
 };
