@@ -93,8 +93,8 @@ export function SignupForm() {
                 Check your inbox
               </h2>
               <p className="text-gray-400 text-sm max-w-[380px]">
-                We've sent a verification link to your email. Please verify your
-                address to activate your AskDB account.
+                We&apos;ve sent a verification link to your email. Please verify
+                your address to activate your AskDB account.
               </p>
               <ShowMessage
                 type="info"
