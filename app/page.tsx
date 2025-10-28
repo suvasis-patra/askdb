@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
+import HomePage from "@/components/custom/landing";
 
 export default function Home() {
-  return <Button>Click me</Button>;
+  return <HomePage />;
 }
