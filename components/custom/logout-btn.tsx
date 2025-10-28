@@ -37,7 +37,7 @@ export function LogoutBtn() {
       disabled={showLoader}
       className="w-full justify-start px-3 py-1.5 text-sm border border-amber-500/40 text-amber-400 
                  hover:bg-amber-500/10 hover:text-amber-300 transition-all duration-200 
-                 focus:outline-none flex items-center gap-2 rounded-md"
+                 focus:outline-none flex items-center gap-2 rounded-md cursor-pointer"
     >
       {showLoader ? (
         <span className="inline-flex items-center gap-2">
