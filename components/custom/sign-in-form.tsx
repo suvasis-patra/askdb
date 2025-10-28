@@ -35,7 +35,7 @@ export function SigninForm() {
   });
   const router = useRouter();
   const [authError, setAuthError] = useState<null | string>(null);
-  const [infoMessage, _setInfoMessage] = useState<null | string>(null);
+  const [infoMessage, _] = useState<null | string>(null);
   async function onSubmit(data: z.infer<typeof ZSignin>) {
     console.log(data);
     const { email, password } = data;

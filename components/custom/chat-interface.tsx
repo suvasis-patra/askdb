@@ -65,7 +65,7 @@ const ChatInterface = ({ userInitial }: { userInitial: string }) => {
           </div>
         ) : (
           <div className="max-w-3xl mx-auto w-full py-24 space-y-6">
-            {messages.map((message, msgIdx) => (
+            {messages.map((message) => (
               <div
                 key={message.id}
                 className={`w-full ${

@@ -57,7 +57,7 @@ export function SignupForm() {
               context.error.message || "Something went wrong. Try again!"
             );
           },
-          onSuccess: (_context) => {
+          onSuccess: () => {
             setInfoMessage("Verify your email to continue...");
             setIsEmailVerificationRequired(true);
           },
